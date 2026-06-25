@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Red Barn Market — Online Farm Store &amp; Weekly Produce Boxes</title>
+    <meta
+      name="description"
+      content="Red Barn Market delivers farm-fresh produce boxes, pasture-raised eggs, and local goods across the Hudson Valley. Order online and get deals by text."
+    />
+    <style>
+      :root {
+        --barn: #b23a2e;
+        --barn-deep: #8c2c22;
+        --cream: #fbf6ec;
+        --wood: #6b4a2f;
+        --ink: #2c2420;
+        --muted: #6f635a;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif; color: var(--ink); background: var(--cream); line-height: 1.6; }
+      header.nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 30px; background: var(--barn); color: #fff; }
+      header.nav .brand { font-size: 22px; font-weight: 800; letter-spacing: .3px; }
+      header.nav nav a { color: #ffe8e2; text-decoration: none; margin-left: 20px; font-size: 15px; font-weight: 600; }
+      .hero { padding: 80px 24px; text-align: center; background: var(--barn-deep); color: #fff; }
+      .hero h1 { font-size: 42px; max-width: 760px; margin: 0 auto 16px; }
+      .hero p { font-size: 19px; max-width: 600px; margin: 0 auto; color: #ffe1da; }
+      .hero .cta { display: inline-block; margin-top: 26px; background: #f4c542; color: #5a3b14; padding: 13px 28px; border-radius: 999px; font-weight: 800; text-decoration: none; }
+      .wrap { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+      section { padding: 60px 0; }
+      h2 { font-size: 30px; margin-bottom: 22px; color: var(--barn-deep); }
+      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .item { background: #fff; border: 1px solid #ecdfca; border-radius: 14px; padding: 22px; }
+      .item h3 { font-size: 18px; margin-bottom: 6px; }
+      .item .price { color: var(--barn); font-weight: 800; margin-top: 8px; }
+      .item p { color: var(--muted); font-size: 14px; }
+      .signup { background: var(--wood); color: #fff; border-radius: 18px; padding: 38px; max-width: 620px; margin: 0 auto; }
+      .signup h2 { color: #fff; }
+      .signup p { color: #f1e3d2; }
+      .signup label { display: block; font-size: 15px; margin: 14px 0 6px; }
+      .signup input { width: 100%; padding: 12px 14px; border-radius: 10px; border: 0; font: inherit; }
+      .consent { display: flex; gap: 12px; align-items: flex-start; margin-top: 18px; }
+      .consent input { margin-top: 5px; transform: scale(1.3); }
+      .consent label { margin: 0; font-size: 13px; color: #ecdcc8; line-height: 1.6; }
+      .btn { margin-top: 20px; width: 100%; padding: 14px; border: 0; border-radius: 999px; background: #f4c542; color: #5a3b14; font-size: 16px; font-weight: 800; cursor: pointer; }
+      footer { background: var(--ink); color: #d8c8b8; padding: 34px 24px; text-align: center; font-size: 14px; }
+      footer a { color: #f1e3d2; text-decoration: none; margin: 0 10px; }
+      @media (max-width: 780px) { .grid { grid-template-columns: 1fr; } .hero h1 { font-size: 32px; } }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="brand">🚜 Red Barn Market</div>
+      <nav>
+        <a href="shop.html">Shop</a>
+        <a href="#boxes">Produce Boxes</a>
+        <a href="#sms">Text Deals</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h1>Farm-fresh food, delivered from our barn to your table</h1>
+      <p>
+        Red Barn Market is a family farm store in the Hudson Valley. Weekly produce
+        boxes, pasture-raised eggs, raw honey, and local goods — ordered online,
+        delivered to your door.
+      </p>
+      <a class="cta" href="shop.html">Shop the market →</a>
+    </div>
+
+    <main class="wrap">
+      <section id="boxes">
+        <h2>This week at the market</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>Harvest Produce Box</h3>
+            <p>A rotating mix of seasonal vegetables and fruit, hand-packed each Friday.</p>
+            <div class="price">$34 / week</div>
+          </div>
+          <div class="item">
+            <h3>Pasture-Raised Eggs</h3>
+            <p>One dozen large brown eggs from our free-roaming hens.</p>
+            <div class="price">$7 / dozen</div>
+          </div>
+          <div class="item">
+            <h3>Wildflower Raw Honey</h3>
+            <p>Unfiltered honey from hives along our orchard fence line.</p>
+            <div class="price">$12 / jar</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sms">
+        <div class="signup">
+          <h2>Get weekly deals by text</h2>
+          <p>
+            Be first to know when the Red Barn Market box drops and grab members-only
+            discounts.
+          </p>
+          <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" />
+
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(845) 555-0188" />
+
+            <div class="consent">
+              <input type="checkbox" id="sms_optin" name="sms_optin" />
+              <label for="sms_optin">
+                Yes, text me weekly deals and order updates from Red Barn Market.
+                Reply STOP to cancel. Message &amp; data rates may apply.
+              </label>
+            </div>
+
+            <button class="btn" type="submit">Sign me up</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <a href="shop.html">Shop</a> ·
+        <a href="terms.html">Terms of Service</a> ·
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <p style="margin-top:12px">© 2026 Red Barn Market LLC · Hudson Valley, NY</p>
+    </footer>
+  </body>
+</html>

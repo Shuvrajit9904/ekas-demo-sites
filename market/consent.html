@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout — Red Barn Market</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body { background: #f0e6d6; }
+      body {
+        font-family: "Trebuchet MS", system-ui, sans-serif; color: #2c2420;
+        display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 28px;
+      }
+      .card { width: 560px; background: #fff; border-radius: 18px; padding: 32px 34px;
+        box-shadow: 0 20px 60px rgba(0,0,0,.14); border: 1px solid #ecdfca; }
+      .top { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #efe6d6; padding-bottom: 14px; }
+      .brand { font-size: 18px; font-weight: 800; color: #b23a2e; }
+      .step { font-size: 12px; color: #8a7c6e; }
+      h1 { font-size: 22px; margin: 18px 0 4px; color: #2c2420; }
+      .summary { background: #fbf6ec; border-radius: 12px; padding: 14px 16px; margin: 14px 0 6px; font-size: 14px; color: #54483f; }
+      .summary .line { display: flex; justify-content: space-between; padding: 3px 0; }
+      .summary .total { font-weight: 800; color: #2c2420; border-top: 1px dashed #e0d3bf; margin-top: 6px; padding-top: 8px; }
+      label.fld { display: block; font-size: 13px; margin: 16px 0 6px; color: #54483f; font-weight: 600; }
+      input[type="tel"] { width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid #d8cbb6; font: inherit; }
+      .consent { display: flex; gap: 11px; align-items: flex-start; margin-top: 18px;
+        background: #fff6f4; border: 1px solid #f3cfc8; padding: 14px; border-radius: 12px; }
+      .consent input { margin-top: 3px; width: 18px; height: 18px; flex: none; accent-color: #b23a2e; }
+      .consent label { font-size: 12.5px; line-height: 1.6; color: #5a3b36; }
+      .req { color: #b23a2e; font-weight: 800; }
+      .btn { margin-top: 20px; width: 100%; padding: 14px; border: 0; border-radius: 999px;
+        background: #b23a2e; color: #fff; font-size: 16px; font-weight: 800; cursor: pointer; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="top">
+        <div class="brand">🚜 Red Barn Market</div>
+        <div class="step">Checkout · Step 2 of 2</div>
+      </div>
+
+      <h1>Review &amp; place your order</h1>
+      <div class="summary">
+        <div class="line"><span>Harvest Produce Box</span><span>$34.00</span></div>
+        <div class="line"><span>Pasture-Raised Eggs ×2</span><span>$14.00</span></div>
+        <div class="line"><span>Delivery</span><span>$5.00</span></div>
+        <div class="line total"><span>Total</span><span>$53.00</span></div>
+      </div>
+
+      <label class="fld" for="phone">Mobile number (for order updates)</label>
+      <input type="tel" id="phone" value="(845) 555-0188" />
+
+      <div class="consent">
+        <input type="checkbox" id="c" />
+        <label for="c">
+          <span class="req">Required to place your order.</span> I agree to receive
+          recurring automated marketing and order-update texts from Red Barn Market at
+          the number above. You must agree to receive these texts to complete checkout.
+          Reply STOP to cancel, HELP for help. Message &amp; data rates may apply.
+        </label>
+      </div>
+
+      <button class="btn" type="button">Place Order →</button>
+    </div>
+  </body>
+</html>

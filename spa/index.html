@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lotus &amp; Sage Spa — Day Spa &amp; Wellness in Asheville, NC</title>
+    <meta
+      name="description"
+      content="Lotus & Sage Spa is a boutique day spa in Asheville, NC offering massage, facials, and wellness rituals. Join our SMS club for offers and appointment reminders."
+    />
+    <style>
+      :root {
+        --green: #3f5e4e;
+        --green-deep: #2c4438;
+        --sage: #e7ede7;
+        --sand: #f6f4ee;
+        --ink: #25302a;
+        --muted: #5d6b63;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: "Georgia", "Times New Roman", serif;
+        color: var(--ink);
+        background: var(--sand);
+        line-height: 1.65;
+      }
+      header.nav {
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 20px 32px; background: var(--green-deep); color: #fff;
+      }
+      header.nav .brand { font-size: 22px; letter-spacing: .5px; font-weight: 600; }
+      header.nav nav a { color: #dfe7e0; text-decoration: none; margin-left: 22px; font-size: 15px; }
+      .hero {
+        padding: 90px 24px; text-align: center;
+        background: linear-gradient(180deg, var(--sage), var(--sand));
+      }
+      .hero h1 { font-size: 44px; line-height: 1.15; max-width: 720px; margin: 0 auto 18px; }
+      .hero p { font-size: 19px; color: var(--muted); max-width: 600px; margin: 0 auto; }
+      .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+      section { padding: 64px 0; }
+      h2 { font-size: 30px; margin-bottom: 22px; color: var(--green-deep); }
+      .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+      .card { background: #fff; border: 1px solid #e4e0d6; border-radius: 14px; padding: 24px; }
+      .card h3 { font-size: 19px; margin-bottom: 8px; }
+      .card p { font-size: 15px; color: var(--muted); }
+      .signup {
+        background: var(--green-deep); color: #fff; border-radius: 18px;
+        padding: 40px; margin: 0 auto; max-width: 640px;
+      }
+      .signup h2 { color: #fff; }
+      .signup p { color: #d7e1d9; font-size: 16px; }
+      .signup form { margin-top: 22px; }
+      .signup label { display: block; font-size: 15px; margin: 14px 0 6px; color: #eef3ef; }
+      .signup input[type="text"],
+      .signup input[type="tel"],
+      .signup input[type="email"] {
+        width: 100%; padding: 12px 14px; border-radius: 10px; border: 0; font-size: 15px;
+        font-family: inherit;
+      }
+      .consent { display: flex; gap: 12px; align-items: flex-start; margin-top: 20px; }
+      .consent input { margin-top: 5px; transform: scale(1.3); }
+      .consent label { margin: 0; font-size: 13px; line-height: 1.6; color: #cfdbd2; }
+      .consent a { color: #f0d9a8; }
+      .btn {
+        margin-top: 22px; width: 100%; padding: 14px; border: 0; border-radius: 999px;
+        background: #f0d9a8; color: var(--green-deep); font-size: 16px; font-weight: 700;
+        font-family: inherit; cursor: pointer;
+      }
+      .fine { font-size: 12px; color: #b9c7bd; margin-top: 12px; }
+      footer { background: var(--ink); color: #b9c7bd; padding: 36px 24px; text-align: center; font-size: 14px; }
+      footer a { color: #d9e3db; text-decoration: none; margin: 0 10px; }
+      @media (max-width: 760px) { .services { grid-template-columns: 1fr; } .hero h1 { font-size: 34px; } }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="brand">Lotus &amp; Sage Spa</div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#visit">Visit</a>
+        <a href="#sms">SMS Club</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h1>Quiet luxury for body and mind</h1>
+      <p>
+        Lotus &amp; Sage Spa is a boutique day spa in Asheville, North Carolina. Massage,
+        facials, and seasonal wellness rituals in a calm, unhurried setting.
+      </p>
+    </div>
+
+    <main class="wrap">
+      <section id="services">
+        <h2>Our services</h2>
+        <div class="services">
+          <div class="card">
+            <h3>Signature Massage</h3>
+            <p>60 or 90-minute therapeutic and Swedish massage tailored to you.</p>
+          </div>
+          <div class="card">
+            <h3>Botanical Facials</h3>
+            <p>Plant-based facials using locally sourced botanicals and oils.</p>
+          </div>
+          <div class="card">
+            <h3>Wellness Rituals</h3>
+            <p>Sauna, body wraps, and aromatherapy soaks for full-body reset.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="visit">
+        <h2>Visit us</h2>
+        <p>
+          18 Haywood Street, Asheville, NC 28801 &middot; Open Tue–Sun, 9am–7pm.
+          Call <strong>(828) 555-0142</strong> or book online. Walk-ins welcome when
+          chairs are open.
+        </p>
+      </section>
+
+      <section id="sms">
+        <div class="signup">
+          <h2>Join the Lotus &amp; Sage SMS Club</h2>
+          <p>
+            Get members-only offers, new treatment announcements, and appointment
+            reminders by text from Lotus &amp; Sage Spa.
+          </p>
+          <form action="#" method="post">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Appleseed" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" />
+
+            <label for="phone">Mobile number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(828) 555-0123" />
+
+            <div class="consent">
+              <input type="checkbox" id="sms_consent" name="sms_consent" />
+              <label for="sms_consent">
+                By checking this box, I agree to receive recurring automated marketing
+                and appointment-reminder text messages from Lotus &amp; Sage Spa at the
+                number provided. Consent is not a condition of any purchase. Message
+                frequency varies (up to 6 messages/month). Message &amp; data rates may
+                apply. Reply STOP to unsubscribe, HELP for help. See our
+                <a href="terms.html">Terms of Service</a> and
+                <a href="privacy.html">Privacy Policy</a>.
+              </label>
+            </div>
+
+            <button class="btn" type="submit">Join the SMS Club</button>
+            <p class="fine">We never sell your number. Opt out anytime by replying STOP.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <a href="privacy.html">Privacy Policy</a> ·
+        <a href="terms.html">Terms of Service</a> ·
+        <a href="#sms">SMS Club</a>
+      </div>
+      <p style="margin-top:12px">© 2026 Lotus &amp; Sage Spa, LLC · Asheville, NC</p>
+    </footer>
+  </body>
+</html>

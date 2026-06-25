@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ekas — demo storefronts</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #f7f5ef; color: #231f1e; line-height: 1.6; }
+      .wrap { max-width: 720px; margin: 0 auto; padding: 80px 24px; }
+      h1 { font-size: 30px; margin-bottom: 8px; }
+      p.sub { color: #5d5852; margin-bottom: 36px; }
+      .row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+      a.tile { display: block; text-decoration: none; color: inherit; background: #fff; border: 1px solid rgba(0,0,0,.1); border-radius: 16px; padding: 24px; }
+      a.tile:hover { border-color: #c9a962; }
+      a.tile h2 { font-size: 20px; margin-bottom: 6px; }
+      a.tile span { color: #5d5852; font-size: 14px; }
+      .note { margin-top: 36px; font-size: 13px; color: #8a847c; }
+      @media (max-width: 620px) { .row { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Demo storefronts</h1>
+      <p class="sub">Sample customer sites used to exercise the ekas A2P 10DLC compliance wizard.</p>
+      <div class="row">
+        <a class="tile" href="spa/index.html">
+          <h2>Lotus &amp; Sage Spa →</h2>
+          <span>Day spa &amp; wellness · marketing + reminders</span>
+        </a>
+        <a class="tile" href="market/index.html">
+          <h2>Red Barn Market →</h2>
+          <span>Online farm store · deals + order updates</span>
+        </a>
+      </div>
+      <p class="note">These are fictional businesses for testing only.</p>
+    </div>
+  </body>
+</html>

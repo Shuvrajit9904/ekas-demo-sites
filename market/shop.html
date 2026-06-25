@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shop — Red Barn Market</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: "Trebuchet MS", system-ui, sans-serif; color: #2c2420; background: #fbf6ec; line-height: 1.55; }
+      header { display: flex; align-items: center; justify-content: space-between; padding: 18px 30px; background: #b23a2e; color: #fff; }
+      header .brand { font-size: 20px; font-weight: 800; }
+      header a { color: #ffe8e2; text-decoration: none; font-weight: 600; }
+      .wrap { max-width: 1040px; margin: 0 auto; padding: 36px 24px 80px; }
+      h1 { font-size: 32px; color: #8c2c22; margin-bottom: 6px; }
+      .sub { color: #6f635a; margin-bottom: 28px; }
+      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+      .product { background: #fff; border: 1px solid #ecdfca; border-radius: 14px; overflow: hidden; }
+      .product .ph { height: 120px; background: linear-gradient(135deg, #f4c542, #e08a3c); }
+      .product .body { padding: 16px; }
+      .product h3 { font-size: 17px; margin-bottom: 4px; }
+      .product p { font-size: 13px; color: #6f635a; min-height: 34px; }
+      .product .row { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
+      .price { color: #b23a2e; font-weight: 800; font-size: 18px; }
+      .add { background: #8c2c22; color: #fff; border: 0; border-radius: 999px; padding: 8px 16px; font-weight: 700; cursor: pointer; }
+      @media (max-width: 780px) { .grid { grid-template-columns: 1fr 1fr; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand">🚜 Red Barn Market</div>
+      <a href="index.html">← Back to home</a>
+    </header>
+    <div class="wrap">
+      <h1>Shop the market</h1>
+      <p class="sub">Fresh from the Hudson Valley. Add to cart and check out for Friday delivery.</p>
+      <div class="grid">
+        <div class="product"><div class="ph"></div><div class="body"><h3>Harvest Produce Box</h3><p>Seasonal vegetables &amp; fruit, hand-packed weekly.</p><div class="row"><span class="price">$34</span><button class="add">Add to cart</button></div></div></div>
+        <div class="product"><div class="ph"></div><div class="body"><h3>Pasture-Raised Eggs</h3><p>One dozen large brown eggs.</p><div class="row"><span class="price">$7</span><button class="add">Add to cart</button></div></div></div>
+        <div class="product"><div class="ph"></div><div class="body"><h3>Wildflower Raw Honey</h3><p>Unfiltered honey, 16oz jar.</p><div class="row"><span class="price">$12</span><button class="add">Add to cart</button></div></div></div>
+        <div class="product"><div class="ph"></div><div class="body"><h3>Heirloom Tomatoes</h3><p>Vine-ripened, sold by the pound.</p><div class="row"><span class="price">$5/lb</span><button class="add">Add to cart</button></div></div></div>
+        <div class="product"><div class="ph"></div><div class="body"><h3>Sourdough Loaf</h3><p>Baked fresh in our farm kitchen.</p><div class="row"><span class="price">$9</span><button class="add">Add to cart</button></div></div></div>
+        <div class="product"><div class="ph"></div><div class="body"><h3>Apple Cider</h3><p>Pressed from orchard apples, half gallon.</p><div class="row"><span class="price">$11</span><button class="add">Add to cart</button></div></div></div>
+      </div>
+    </div>
+  </body>
+</html>

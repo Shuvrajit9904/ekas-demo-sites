@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lotus &amp; Sage Spa — SMS opt-in</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body { background: #e7ede7; }
+      body {
+        font-family: Georgia, "Times New Roman", serif; color: #25302a;
+        display: flex; align-items: center; justify-content: center;
+        min-height: 100vh; padding: 28px;
+      }
+      .card {
+        width: 560px; background: #2c4438; color: #fff; border-radius: 20px;
+        padding: 40px 40px 34px; box-shadow: 0 20px 60px rgba(0,0,0,.18);
+      }
+      .kicker { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #f0d9a8; }
+      h1 { font-size: 27px; margin: 8px 0 10px; }
+      .lead { font-size: 15px; color: #d7e1d9; line-height: 1.6; }
+      label.fld { display: block; font-size: 14px; margin: 18px 0 6px; color: #eef3ef; }
+      input[type="text"], input[type="tel"] {
+        width: 100%; padding: 12px 14px; border-radius: 10px; border: 0; font-size: 15px;
+        font-family: inherit; background: #fff; color: #25302a;
+      }
+      .consent { display: flex; gap: 12px; align-items: flex-start; margin-top: 22px;
+        background: rgba(255,255,255,.06); padding: 14px; border-radius: 12px; }
+      .consent input { margin-top: 4px; width: 18px; height: 18px; flex: none; accent-color: #f0d9a8; }
+      .consent label { font-size: 12.5px; line-height: 1.65; color: #d7e1d9; }
+      .consent a { color: #f0d9a8; }
+      .btn {
+        margin-top: 22px; width: 100%; padding: 14px; border: 0; border-radius: 999px;
+        background: #f0d9a8; color: #2c4438; font-size: 16px; font-weight: 700;
+        font-family: inherit; cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="kicker">Lotus &amp; Sage Spa</div>
+      <h1>Join our SMS Club</h1>
+      <p class="lead">
+        Members-only offers, new treatments, and appointment reminders — straight to
+        your phone.
+      </p>
+
+      <label class="fld" for="phone">Mobile number</label>
+      <input type="tel" id="phone" value="(828) 555-0123" />
+
+      <div class="consent">
+        <input type="checkbox" id="c" checked />
+        <label for="c">
+          By checking this box, I agree to receive recurring automated marketing and
+          appointment-reminder texts from Lotus &amp; Sage Spa at the number provided.
+          Consent is not a condition of purchase. Msg frequency varies (up to 6/month).
+          Message &amp; data rates may apply. Reply STOP to unsubscribe, HELP for help.
+          See our <a href="#">Terms</a> &amp; <a href="#">Privacy Policy</a>.
+        </label>
+      </div>
+
+      <button class="btn" type="button">Join the SMS Club</button>
+    </div>
+  </body>
+</html>
